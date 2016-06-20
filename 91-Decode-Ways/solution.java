@@ -3,9 +3,9 @@ public class Solution {
         int size = s.length();
         if (size ==0) return 0;
         int[] a = new int[size+1];
-        for(int i=0;i<=size;i++) {
-            a[i] = 0;
-        }
+        //for(int i=0;i<=size;i++) {
+        //    a[i] = 0;
+        //}
         //if (s[size-1] )
         a[size] = 1;
         if (s.charAt(size-1) != '0') 
@@ -19,7 +19,7 @@ public class Solution {
             } else {
                 a[i] = a[i+1];
             }
-            System.out.println(i + " " + a[i]);
+           // System.out.println(i + " " + a[i]);
         }
         return a[0];
     }
